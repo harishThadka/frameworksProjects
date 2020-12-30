@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Display page</title>
+</head>
+<body>
+We are displaying dogs!
+
+<!-- HttpServlet and HttpSessions as parameters. -->
+<!-- <p th:text="Hello+' '+${session.dogNameDisplay}"></p> -->
+
+<!-- With MV with string as parameters -->
+<!-- <p th:text="Hello+' ---- '+${dogNameDisplay}"></p> -->
+
+<!-- With MV with Dog as parameters -->
+<p th:text="Hello+' ---- '+${dogNameDisplay}"></p>
+</body>
+</html>
