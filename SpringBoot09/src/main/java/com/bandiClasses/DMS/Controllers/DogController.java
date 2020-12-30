@@ -46,11 +46,4 @@ public class DogController {
 		mv.addObject("dogs", dogList);
 		return mv;
 	}
-	
-	@RequestMapping("editDog")
-	public ModelAndView editDog(Dog dog) {
-		dogRepo.save(dog);
-		mv.setViewName("editDog");
-		return mv;
-	}
 }
